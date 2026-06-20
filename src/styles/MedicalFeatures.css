@@ -1,0 +1,138 @@
+.medical-section {
+  padding: 100px 0;
+}
+
+.medical-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.medical-map-wrapper {
+  position: relative;
+}
+
+.medical-map {
+  width: 100%;
+  height: 450px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.appointment-card {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+
+  background: #8b5cf6;
+  color: white;
+
+  padding: 18px;
+  border-radius: 20px;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.appointment-card h5 {
+  margin-bottom: 5px;
+}
+
+.appointment-card p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.appointment-card button {
+  border: none;
+  background: white;
+  color: #8b5cf6;
+
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.medical-content {
+  background: #f8f8f8;
+  padding: 40px;
+  border-radius: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.medical-badge {
+  background: #efe7ff;
+  color: #8b5cf6;
+
+  width: fit-content;
+
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+.medical-content h2 {
+  margin: 20px 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.medical-content p {
+  color: #666;
+  line-height: 1.7;
+}
+
+.feature-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.feature-item {
+  font-weight: 500;
+}
+
+.medical-btn {
+  width: fit-content;
+
+  border: none;
+  background: #8b5cf6;
+  color: white;
+
+  padding: 12px 24px;
+  border-radius: 30px;
+
+  transition: 0.3s;
+}
+
+.medical-btn:hover {
+  transform: translateY(-4px);
+}
+
+@media (max-width: 992px) {
+
+  .medical-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-list {
+    grid-template-columns: 1fr;
+  }
+
+  .medical-map {
+    height: 350px;
+  }
+
+  .medical-content {
+    padding: 25px;
+  }
+
+  .medical-content h2 {
+    font-size: 1.8rem;
+  }
+
+}
